@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>React App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="todo.js"></script>
+</head>
+
+<body>
+  <div class="head">
+    <div class="addButton" onclick="document.getElementById('id01').style.display='block'">Add</div>
+    <div style="text-align: center;">CD board </div>
+  </div>
+  <div class="flex-container">
+    <div class="phase">
+      <div class="phaseHead">TO DO</div>
+      <div class="content" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="phase">
+      <div class="phaseHead">IN PROGRESS</div>
+      <div class="content" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">Content</div>
+    </div>
+    <div class="phase">
+      <div class="phaseHead">IN PR</div>
+      <div class="content" id="inpr" ondrop="drop(event)" ondragover="allowDrop(event)">Content</div>
+    </div>
+    <div class="phase">
+      <div class="phaseHead">QA</div>
+      <div class="content" id="qa" ondrop="drop(event)" ondragover="allowDrop(event)">Content</div>
+    </div>
+    <div class="phase">
+      <div class="phaseHead">UAT</div>
+      <div class="content" id="uat" ondrop="drop(event)" ondragover="allowDrop(event)">Content</div>
+    </div>
+  </div>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content" style="padding: 1.01em 16px;">
+      <div class="w3-container">
+        <span onclick="resetSubmitField()" class="w3-button w3-display-topright">&times;</span>
+        <div class="formHead">
+          <div class="formHeadText">Status</div><br />
+          <select id="status" name="status">
+            <option value="todo">TO DO</option>
+            <option value="inprogress">IN PROGRESS</option>
+            <option value="inpr">IN PR</option>
+            <option value="qa">QA</option>
+            <option value="uat">UAT</option>
+          </select>
+        </div>
+        <div class="formHead">
+          <div class="formHeadText">Subject</div>
+          <input type="text" id="subject" name="subject">
+        </div>
+        <div class="formHead">
+          <div class="formHeadText">Description</div>
+          <input type="text" id="description" name="description">
+        </div>
+        <div class="formHead" style="display: flex;">
+          <div class="selectField">
+            <div class="formHeadText">Issue Type</div><br />
+            <select id="issue" name="issue">
+              <option value="story">story</option>
+              <option value="bugs">bugs</option>
+              <option value="subtask">subtask</option>
+            </select>
+          </div>
+          <div class="selectField">
+            <div class="formHeadText">Prority</div><br />
+            <select id="prority" name="prority">
+              <option value="p1">P1</option>
+              <option value="p2">P2</option>
+              <option value="p3">P3</option>
+            </select>
+          </div>
+          <div class="selectField">
+            <div class="formHeadText">Assignee</div><br />
+            <select id="assignee" name="assignee">
+              <option value="Monugoyal">Monu Goyal</option>
+              <option value="maynak">Mayank Khurana</option>
+            </select>
+          </div>
+        </div>
+        <div class="formSubmit">
+          <div class="submitField" id="submitField" onclick="addTodoList()">Submit</div>
+          <div class="deleteField" id="deleteField"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

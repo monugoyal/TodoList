@@ -1,0 +1,102 @@
+  body {
+    
+  }
+
+  .head {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .addButton
+  {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    position: fixed;
+    top: 44px;
+    left: 26px;
+    padding: 5px;
+    color :red;
+  }
+  .flex-container {
+    display: flex;
+  }
+
+  .phase {
+    flex: 20%;
+    margin: 9px;
+  }
+  .phaseHead
+  {
+    padding: 7px;
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+  }
+  .content 
+  {
+    margin: 22px 6px 10px 6px;
+    border: 1px solid #F4F5F7;
+    border-radius: 8px;
+    background-color: #F4F5F7;
+    height: 100%;
+  }
+  .contentHead
+  {
+    font-size: 14px;
+    color: palevioletred;
+    padding-top: 5px;
+  }
+  .contentWithId
+  {
+    padding: 14px;
+    background: white;
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    box-shadow: 0px 1px 2px 0px rgba(9, 30, 66, 0.25);
+  }
+  .issueAndPriority
+  {
+    display: flex;
+    padding-top: 15px;
+    color: slategrey;
+    font-size: 16px;
+  }
+  .formHead
+  {
+    padding: 10px;
+  }
+  input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  }
+  .selectField
+  {
+    flex: 30%;
+  }
+  .submitField
+  {
+    margin-top: 21px;
+    padding: 10px 20px;
+    color: black;
+    background-color: skyblue;
+    text-align: center;
+  }
+  .formSubmit
+  {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .deleteField
+  {
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    padding: 19px;
+  }
